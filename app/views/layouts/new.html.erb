@@ -1,0 +1,13 @@
+<%= form_with model: @link, local: true do |form| %>
+  <p>
+    <%= form.label :url %><br>
+    <%= form.text_field :url %>
+  </p>
+  <p>
+    <%= form.label :slug %> (optional)<br>
+    <%= form.text_field :slug %>
+  </p>
+  <p>
+    <%= form.submit %>
+  </p>
+<% end %>
